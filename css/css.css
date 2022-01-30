@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+header{
+	background: #444;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.logo{
+	float:left;
+}
+.nav{
+	float: right;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+.nav li{
+	display: inline-block;
+	margin-left: 70px;
+	paddin-top: 23px;
+	
+}
+.nav a{
+	display: block;
+	color: black;
+	padding: 15px 20px 15px 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
