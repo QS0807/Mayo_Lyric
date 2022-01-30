@@ -1,0 +1,290 @@
+  <!doctype html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Pride Kakumei</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href	="css/style.css" rel="stylesheet" type="text/css">
+  <script src="jquery/dist/jquery.min.js"></script> 
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script type ="text/javascript" src="js/youtubeControl.js"></script>
+  <script src="https://unpkg.com/wanakana"></script>
+	  	<script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
+      <script src="https://kit.fontawesome.com/6cd33aa506.js" crossorigin="anonymous"></script>
+	        <script src="js/lyric.js"></script>
+  </head>
+  <body style="background: #f2f2f2;;">
+	  
+  <div id ="header">
+    <h1 id="logo_img" style="top:22px;left:200px;"> <img src ="image/3465592_fuji_japan_landmark_landscape_mountain_icon.svg" alt="MAYO" width = "120" height="80"> </h1>
+  </div>
+	  <div class="main-left">  
+		<input placeholder="type romanji here" style="" type="text" id="wanakana-input" />
+  <script>
+    var textInput = document.getElementById('wanakana-input');
+    wanakana.bind(textInput, /* options */);
+  </script>
+		<button id="translate-button" onClick="translatefunction()">translate</button>
+		<div id ="output"></div>
+		<script>
+			async function translatefunction(){
+				translate.from="Japanese"
+			var input=document.getElementById("wanakana-input").value;
+			const text = await translate(input, "English");
+			console.log(text);
+			document.getElementById("output").innerHTML=text;
+			}
+		</script>
+		<img src="image/translator.png" width="100" height="100" >
+		
+	</div>
+  <div id="contents">
+  <div id="left_col">
+  <div>
+  <h2 class="main-title" lang="ja"> Pride Kakumei / プライド革命 - CHiCO with HoneyWorks</h2>
+	  <div style="text-align: center;background-color: black; min-width:  400px; min-height: 450px;">
+	  <span id="VideoID" style="display:none;">0xMFEE4uMgM</span>
+  <div id="player"></div>
+	  </div>
+  <div class = "main-content dp">
+  <div class="lyric" >
+    <div id="font" lang="ja" style="font-size:1.6em;width:100%;color:#333;text-align:center;">
+      <ruby>
+        <rb>プライド</rb>
+        <rt>ぷらいど</rt>
+      </ruby>
+        <ruby>
+            <rb>革命</rb>
+            <rt>かくめい</rt>
+        </ruby>
+      <div class = "line"></div>
+      <ul style="padding: 0px;">
+          <li><p class="Romaji" id="p1">risou dake o kuchi ni shiteta kako</p></li>
+          <button id="b1" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+          <script>RomanjiToHiragana("risou dake o kuchi ni shiteta kako","b1","p1")</script>
+        <li lang="ja">
+          <p class="lyric_style">理想だけを口にしてた過去</p>
+            <button id="1" style="display: block;float: right;border-radius: 55%;"><i class="fas fa-play"></i></button>
+            <script>timejump(0,"1")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">In a past where I spoke of nothing but ideals</p>
+        </li>
+        <li class = "line"></li>
+        <li><p class="Romaji" id="p2">Kabe wa doko ni datte tachifusaide Tesaguri de ikiteku</p></li>
+          <button id="b2" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+          <script>RomanjiToHiragana("Kabe wa doko ni datte tachifusaide Tesaguri de ikiteku","b2","p2")</script>
+        <li lang="ja">
+          <p class="lyric_style">壁はどこにだって立ち塞いで 手探りで生きてく</p>
+            <button id="2" style="display: block;float: right">play</button>
+            <script>timejump(5,"2")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">Walls stood in my way at every turn, So I lived on, fumbling along!</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+           <li><p class="Romaji" id="p2.5">Akai sora ga kage o nobasu Mada sore wa tayorinakute jibunkatte Tameiki o kobosu</p></li>
+          <button id="b2.5" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+          <script>RomanjiToHiragana("Akai sora ga kage o nobasu Mada sore wa tayorinakute jibunkatte Tameiki o kobosu","b2.5","p2.5")</script></li>
+        <li lang="ja">
+          <p class="lyric_style">紅い空が影を伸ばす まだそれは頼りなくて自分勝手 ため息をこぼす</p>
+            <button id="3" style="display: block;float: right"><i class="fas fa-play"></i></button>
+            <script>timejump(17,"3")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">The red sky stretches out my shadow. So unreliable and selfish –I can’t help but sigh.</p>
+        </li>
+        <li class = "line"></li>
+          <li><p class="Romaji" id="p3">surechigai miwataseba sou torinokosareteita</p></li>
+          <button id="b3" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+          <script>RomanjiToHiragana("surechigai miwataseba sou torinokosareteita","b3","p3")</script>
+        <li lang="ja">
+          <p class="lyric_style">すれ違い見渡せばそう 取り残されていた</p>
+            <button id="4" style="display: block;float: right">play</button>
+            <script>timejump(27,"4")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">When I stopped to look at what I’d missed, I was simply left behind!</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+           <li><p class="Romaji" id="p4">asu wa mietemasu ka</p></li>
+          <button id="b4" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+		  <script>RomanjiToHiragana("asu wa mietemasu ka","b4","p4")</script></li>
+        <li lang="ja">
+          <p class="lyric_style">明日は見えてますか</p>
+            <button id="5" style="display: block;float: right">play</button>
+            <script>timejump(33,"5")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">“Do you have your eyes on tomorrow?”</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <li><p class="Romaji" id="p5">Kurayami kakikesu kimi no koe ga kikoetanda</p></li>
+          <button id="b5" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+          <script>RomanjiToHiragana("Kurayami kakikesu kimi no koe ga kikoetanda","b5","p5")</script></li>
+        <li lang="ja">
+          <p class="lyric_style">暗闇かき消す君の声が聞こえたんだ</p>
+            <button id="6" style="display: block;float: right">play</button>
+            <script>timejump(37,"6")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">I heard your voice, dispelling the darkness!</p>
+        </li>
+        <li class = "line"></li>
+           <li lang="ja">
+          <li><p class="Romaji" id="p6">yowakutatte tachimukaunda</p></li>
+          <button id="b6" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+		  <script>RomanjiToHiragana("yowakutatte tachimukaunda","b6","p6")</script></li>
+        <li lang="ja">
+          <p class="lyric_style">弱くたって立ち向かうんだ</p>
+            <button id="7" style="display: block;float: right">play</button>
+            <script>timejump(37,"7")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">Even though I'm weak I'll stand and fight</p>
+        </li>
+        <li class = "line"></li>
+          <li lang="ja">
+          <li><p class="Romaji" id="p7">riyuu nara kimi ni moratta</p></li>
+          <button id="b7" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+		  <script>RomanjiToHiragana("riyuu nara kimi ni moratta","b7","p7")</script></li>
+        <li lang="ja">
+          <p class="lyric_style">理由なら君にもらった</p>
+            <button id="8" style="display: block;float: right">play</button>
+            <script>timejump(38,"8")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">If it's a reason I need, I got it from you</p>
+        </li>
+        <li class = "line"></li>
+          <li lang="ja">
+          <li><p class="Romaji" id="p8">wakatteru, dakara ikunda yo.</p></li>
+          <button id="b8" style= "display: block;float: right;border:none;"><i class="fas fa-language"></i></button>
+		  <script>RomanjiToHiragana("wakatteru, dakara ikunda yo.","b8","p8")</script></li>
+        <li lang="ja">
+          <p class="lyric_style">分かってる、だから行くんだよ</p>
+            <button id="9" style="display: block;float: right">play</button>
+            <script>timejump(42,"9")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">so shake free from your anxiety. Even if you can't see it</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">痛みだってきっと 意味があって昔からそうで</p>
+            <button id="10" style="display: block;float: right">play</button>
+            <script>timejump(47,"10")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">carries meaning, and it always has.</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">怯えるな挑もうぜ</p>
+            <button id="11" style="display: block;float: right">play</button>
+            <script>timejump(53,"11")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">so don't fear it. Let's throw down with someone.</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">読める結末なんかは興味ない</p>
+            <button id="12" style="display: block;float: right">play</button>
+            <script>timejump(57,"12")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">I can't predict nor am I interested</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">見えないから戦うんだ</p>
+            <button id="13" style="display: block;float: right">play</button>
+            <script>timejump(60,"13")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">in predicting the end, so I'll just fight on.</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">限界を決める 孤独な弱虫になるな</p>
+            <button id="14" style="display: block;float: right">play</button>
+            <script>timejump(62,"14")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">Don't be a lonely coward who takes limits for granted.</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">“絆”大切にしたい守りたい</p>
+            <button id="15" style="display: block;float: right">play</button>
+            <script>timejump(67,"15")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">I want to cherish and protect my "bonds"</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">理由なんてどうだっていい</p>
+            <button id="16" style="display: block;float: right">play</button>
+            <script>timejump(70,"16")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">for absolutely any reason at all,</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">最後に笑っていられるようにと</p>
+            <button id="17" style="display: block;float: right">play</button>
+            <script>timejump(72,"17")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">so that I can smile in the end.</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">今は種火だって誰かを灯せるように育てて</p>
+            <button id="18" style="display: block;float: right">play</button>
+            <script>timejump(77,"18")</script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">Even if all you got is a spark, nurture it to light someone up</p>
+        </li>
+        <li class = "line"></li>
+        <li lang="ja">
+          <p class="lyric_style">最後に笑っていられるようにと</p>
+            <button id="19" style="display: block;float: right">play</button>
+          <script>
+              timejump(83,"19");
+            </script>
+        </li>
+        <li lang ="en">
+          <p class="lyric_style">so that you can smile in the end.</p>
+        </li>
+        <li class = "line"></li> 
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="right_col">
+
+    <div id="divJPSongRelated" style="display: block;">
+  <div  style="margin-bottom:4px;text-align:center;color:black;">Songlists</div>
+    <ul>
+      <li  style="overflow:hidden;width:100px;height:75px;position:relative;margin:0;object-position: center;"><a href="https://www.youtube.com/watch?v=FpMyP__pZp0" target="_blank"><img src="image/自尊心.jpg" width="120" height="100" stylke="object-fit:contain;"></a></li>
+      <li  lang="ja"><a href="" target="_blank"> Pride Kakumei/プライド革命 </a><br>CHiCO with HoneyWorks</li>
+      <li style="overflow:hidden;width:100px;height:75px;position:relative;margin:0;background-color:#000"><a href="https://www.youtube.com/watch?v=FpMyP__pZp0" target="_blank"><img src="image/mqdefault.jpg" width="150" height="85" stylke="object-fit:contain;"></a></li>
+      <li  lang="ja"><a href="" target="_blank"> 世界は恋に落ちている </a><br>CHiCO with HoneyWorks</li>
+		
+    </ul>
+  </div>
+  </div>
+  </div>
+  </body>
+  </html>
